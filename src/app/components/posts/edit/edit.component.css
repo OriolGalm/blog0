@@ -1,0 +1,23 @@
+.container{
+    position: absolute;
+    width:67.5%;
+    padding:20px 1%;
+    margin-top: 10px;;
+    background: silver;
+}
+mat-label{
+    color:rgb(121, 47, 140);
+}
+.prev-image{
+    width:40%;
+}
+button{
+    margin-left: 18%;
+}
+.input-width{
+    width:90%;
+    margin: 0px 5%;
+}
+.containerFile{
+    margin-left: 5%;
+}

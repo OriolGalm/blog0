@@ -1,0 +1,9 @@
+<mat-toolbar>
+    <a routerLink="/home" mat-button>Home</a>
+    <a routerLink="/about" mat-button disabled>About</a>  
+    <a routerLink="/article, article.1" mat-button disabled>Readme</a>  
+    <a *ngIf="authSvc.userData$ | async" routerLink="/admin/canvi" mat-button>Contrasenya</a>
+    <a *ngIf="authSvc.userData$ | async" routerLink="/admin/new" mat-button>Nou Article</a> 
+    <a *ngIf="authSvc.userData$ | async" (click)="onLogout()">
+        <button mat-button>LogOut</button></a>
+</mat-toolbar>

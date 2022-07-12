@@ -1,0 +1,69 @@
+<div class="container">
+    <h2>Crea un article nou</h2>
+    <form [formGroup]="newPostForm" (ngSubmit)="newPost(newPostForm.value)">
+        <p>
+        <mat-form-field class="input-width">
+            <mat-label>Títol</mat-label>
+            <input matInput type="text" appearance="fill" formControlName="titol">
+        </mat-form-field>
+        </p>
+        
+        <div class="containerFile">
+            <label>Imatge principal:</label><br>
+            <input type="file" accept=".png, .jpg, .jpeg" multiple id="inputUpload" formControlName="imatge1" (change)="handleImage1($event)">
+            <label for="inputUpload">Foto <mat-icon>backup</mat-icon></label>
+        </div>
+        
+        <p>
+        <mat-form-field class="input-width">
+            <mat-label>alt1</mat-label>
+            <input matInput formControlName="alt1">
+        </mat-form-field>
+        </p>
+        <p>
+        <mat-form-field class="input-width">
+            <mat-label>Text 1</mat-label>
+            <textarea matInput formControlName="text1"></textarea>
+        </mat-form-field>
+        </p> 
+        
+        <div class="containerFile">
+            <label>Imatge 2:</label><br>
+                <input type="file" formControlName="imatge2" (change)="handleImage2($event)">
+                <mat-icon>cloud-upload</mat-icon>
+        </div>
+        
+        <p>
+        <mat-form-field class="input-width">
+            <mat-label>alt2</mat-label>
+            <input matInput formControlName="alt2">
+        </mat-form-field>
+        </p>
+        <p>
+        <mat-form-field class="input-width">
+            <mat-label>Text 2</mat-label>
+            <textarea matInput formControlName="text2"></textarea>
+        </mat-form-field>
+        </p>
+        
+        <div class="containerFile">
+            <label>Imatge 3:</label><br>
+            <input type="file" formControlName="imatge3" (change)="handleImage3($event)">
+            <mat-icon>cloud-upload</mat-icon>
+        </div>
+        
+        <p>
+        <mat-form-field class="input-width">
+            <mat-label>Alt 3</mat-label>
+            <input matInput formControlName="alt3">
+        </mat-form-field>
+        </p>
+        <p>
+        <mat-form-field class="input-width">
+            <mat-label>Text 3</mat-label>
+            <textarea matInput formControlName="text3"></textarea>
+        </mat-form-field>
+        </p>
+        <button type="submit" mat-raised-button>Crear Article<mat-icon>add</mat-icon></button>
+    </form>
+</div>

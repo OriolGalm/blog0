@@ -1,0 +1,100 @@
+<div class="container">
+    <h2>Modifica aquest article</h2>
+    <form [formGroup]="editPostForm" (ngSubmit)="editPost(editPostForm.value)">
+        <p>
+        <mat-form-field class="input-width">
+            <mat-label>Títol</mat-label>
+            <input matInput type="text" formControlName="titol">
+        </mat-form-field>
+        
+        </p>
+        
+        <div class="containerFile">
+            <mat-label>Imatge principal</mat-label><br>
+            <img class="prev-image" [src]="article.imatge1">
+            <input type="file" formControlName="imatge1" (change)="handleImage($event)">
+            <mat-icon>cloud-upload</mat-icon>
+        </div>
+        
+        <p>
+        <mat-form-field class="input-width">
+            <mat-label>alt1</mat-label>
+            <input matInput formControlName="alt1">
+        </mat-form-field>
+        </p>
+        <p>
+        <mat-form-field class="input-width">
+            <mat-label>Text 1</mat-label>
+            <textarea matInput formControlName="text1"></textarea>
+        </mat-form-field>
+        </p>
+        <!--
+        <div class="containerFile">
+            <mat-label>Imatge 2</mat-label><br>
+            <img class="prev-image" [src]="article.imatge2">
+            <input type="file" formControlName="imatge2" (change)="handleImage($event)">
+            <mat-icon>cloud-upload</mat-icon>
+        </div>
+        
+        <p>
+        <mat-form-field class="input-width">
+            <mat-label>alt2</mat-label>
+            <input matInput formControlName="alt2">
+        </mat-form-field>
+        </p>-->
+        <p>
+        <mat-form-field class="input-width">
+            <mat-label>Text 2</mat-label>
+            <textarea matInput formControlName="text2"></textarea>
+        </mat-form-field>
+        </p>
+        <!--
+        <div class="containerFile">
+            <mat-label>Imatge 3</mat-label><br>
+            <input type="file" formControlName="imatge3">
+            <mat-icon>cloud-upload</mat-icon>
+        </div>
+        
+        <p>
+        <mat-form-field class="input-width">
+            <mat-label>Alt 3</mat-label>
+            <input matInput formControlName="alt3">
+        </mat-form-field>
+        </p>-->
+        <p>
+        <mat-form-field class="input-width">
+            <mat-label>Text 3</mat-label>
+            <textarea matInput formControlName="text3"></textarea>
+        </mat-form-field>
+        </p>
+        <button type="submit" mat-raised-button>Editar Article&nbsp;&nbsp;<mat-icon>publish</mat-icon></button>
+        <button mat-raised-button (click)="toNew()">Nou Article&nbsp;&nbsp;<mat-icon>add</mat-icon><mat-icon>undo</mat-icon></button>
+    </form>
+    <hr><!--
+    <h2>Puja més fotos</h2>
+    <form [formGroup]="novesImatges" (submit)="pujaImatges(novesImatges.value)">
+        <div class="containerFile">
+            <mat-label>Imatge2</mat-label><br>
+            <input type="file" formControlName="imatge2" (change)="handleImage($event)">
+            <mat-icon>cloud-upload</mat-icon>
+        </div>       
+        <p>
+        <mat-form-field class="input-width">
+            <mat-label>alt2</mat-label>
+            <input matInput formControlName="alt2">
+        </mat-form-field>
+        </p>
+
+        <div class="containerFile">
+            <mat-label>Imatge3</mat-label><br>
+            <input type="file" formControlName="imatge3" (change)="handleImage($event)">
+            <mat-icon>cloud-upload</mat-icon>
+        </div>       
+        <p>
+        <mat-form-field class="input-width">
+            <mat-label>alt3</mat-label>
+            <input matInput formControlName="alt3">
+        </mat-form-field>
+        </p>
+    </form>-->
+</div>

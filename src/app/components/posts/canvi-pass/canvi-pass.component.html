@@ -1,0 +1,22 @@
+<div class="container">
+<mat-card>
+    <mat-card-title>Canviar Contrasenya</mat-card-title>
+    <mat-card-content>
+        
+            <p>
+                <mat-form-field>
+                    <input type="email" 
+                    matInput appearance="legacy" 
+                    placeholder="Email" 
+                    [formControl]="userEmail"
+                    required>
+                    <mat-error>
+                        
+                    </mat-error>
+                </mat-form-field>
+            </p>
+            <button mat-raised-button color="primary" (click)="canviPass()">Canviar</button>
+           
+    </mat-card-content>   
+</mat-card>
+</div>

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ngblog-f4132": {
+      "hosting": {
+        "blog0": [
+          "ngblog-f4132"
+        ]
+      }
+    }
+  }
+}

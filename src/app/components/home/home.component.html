@@ -1,0 +1,21 @@
+<mat-card class="example-card" *ngFor="let article of article$ | async">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>
+        <a [routerLink]="['/article', article.id]">
+        {{article.titol}}
+      </a></mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [routerLink]="['/article', article.id]" [src]="article.imatge1" alt="{{ article.alt1 }}">
+    <mat-card-content>
+      <p>
+        {{ article.text1}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-stroked-button color="accent">LIKE</button>
+      <button mat-stroked-button color="accent">SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+  

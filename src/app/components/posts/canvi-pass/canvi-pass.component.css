@@ -1,0 +1,28 @@
+.container{
+    position: absolute;
+    width:67.5%;
+    top:40px;
+    padding:20px 1%;
+    margin-top: 10px;
+}
+mat-card{
+    width:45%;
+    min-width: 250px;
+    margin: 200px auto;
+}
+
+.mat-form-field{
+    width:100%;
+    min-width: 250px;
+}
+.mat-card-title{
+    display: flex;
+    justify-content: center;
+}
+h5{
+   color:red;
+   text-align: center;
+}
+button{
+    margin-left: 38%
+}
